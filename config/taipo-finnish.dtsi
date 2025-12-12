@@ -105,9 +105,10 @@ TCOMBO(V,      &kp V,      &kp LS(V), &kp STAR,   &kp LC(V),    TLR BLI,     TRR
 TCOMBO(J,      &kp J,      &kp LS(J), &kp EQUAL,  &kp LC(Z),    TLM BLP,     TRM BRP)
 TCOMBO(M,      &kp M,      &kp LS(M), &kp DOLLAR, &none,        TLP BLI,     TRP BRI)
 TCOMBO(W,      &kp W,      &kp LS(W), &kp AMPS,   &none,        TLI BLP,     TRI BRP)
-TCOMBO(ARING,  &kp LBKT,   &kp LS(LBKT), &none,   &none,        TLP BLR,     TRP BRR)
+// ARING displaced by ODIAR. Restore if needed on 3-key combo.
+// TCOMBO(ARING,  &kp LBKT,   &kp LS(LBKT), &none,   &none,        TLP BLR,     TRP BRR)
 TCOMBO(ADIAR,  &kp SQT,    &kp LS(SQT),  &none,   &none,        TLR BLP,     TRR BRP)
-TCOMBO(ODIAR,  &kp SEMI,   &kp LS(SEMI), &none,   &none,        TLI BLR,     TRI BRR)
+TCOMBO(ODIAR,  &kp SEMI,   &kp LS(SEMI), &none,   &none,        TLP BLR,     TRP BRR)
 TCOMBO(SLASH,  &kp SLASH,  &kp BSLH,  &kp PIPE,   &none,        TLR BLM,     TRR BRM)
 TCOMBO(MINUS,  &kp MINUS,  &kp UNDER, &kp PRCNT,  &none,        TLM BLR,     TRM BRR)
 TCOMBO(QMARK,  &kp QMARK,  &kp EXCL,  &kp CAPS,   &none,        TLI BLM,     TRI BRM)

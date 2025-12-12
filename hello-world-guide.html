@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taipo "Hello World"</title>
+    <style>
+        body {
+            font-family: 'Courier New', monospace;
+            background: #1e1e1e;
+            color: #d4d4d4;
+            margin: 0;
+            padding: 10px;
+            overflow-x: hidden;
+        }
+        h1 {
+            text-align: center;
+            font-size: 1.2rem;
+            margin: 5px 0 15px 0;
+            color: #4ec9b0;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 10px;
+            row-gap: 5px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .chord {
+            display: flex;
+            align-items: center;
+            padding: 2px 5px;
+            background: #252526;
+            border-radius: 4px;
+        }
+        .left-hand {
+            grid-column: 1;
+            justify-content: flex-end;
+            border-right: 4px solid #4ec9b0;
+            text-align: right;
+        }
+        .right-hand {
+            grid-column: 2;
+            justify-content: flex-start;
+            border-left: 4px solid #ce9178;
+            text-align: left;
+        }
+        .left-hand .info { margin-right: 10px; }
+        .right-hand .info { margin-left: 10px; }
+        .info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            min-width: 80px;
+        }
+        .char {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #dcdcaa;
+            line-height: 1;
+        }
+        .pos {
+            font-size: 0.75em;
+            color: #9cdcfe;
+            white-space: nowrap;
+        }
+        pre {
+            margin: 0;
+            line-height: 1;
+            font-size: 11px;
+            color: #cccccc;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>h e l l o _ w o r l d !</h1>
+    <div class="container">
+        <!-- h -->
+        <div class="chord left-hand">
+            <div class="info">
+                <span class="char">h</span>
+                <span class="pos">M + I bottom</span>
+            </div>
+<pre>
+┌───┬───┬───┬───┐
+│   │   │   │   │
+├───┼───┼───┼───┤
+│   │   │ ● │ ● │
+└───┴───┴───┴───┘
+</pre>
+        </div>
+
+        <!-- e -->
+        <div class="chord right-hand">
+<pre>
+┌───┬───┬───┬───┐
+│   │   │   │   │
+├───┼───┼───┼───┤
+│ ● │   │   │   │
+└───┴───┴───┴───┘
+</pre>
+            <div class="info">
+                <span class="char">e</span>
+                <span class="pos">I bottom</span>
+            </div>
+        </div>
+
+        <!-- l -->
+        <div class="chord left-hand">
+            <div class="info">
+                <span class="char">l</span>
+                <span class="pos">P + R bottom</span>
+            </div>
+<pre>
+┌───┬───┬───┬───┐
+│   │   │   │   │
+├───┼───┼───┼───┤
+│ ● │ ● │   │   │
+└───┴───┴───┴───┘
+</pre>
+        </div>
+
+        <!-- l -->
+        <div class="chord right-hand">
+<pre>
+┌───┬───┬───┬───┐
+│   │   │   │   │
+├───┼───┼───┼───┤
+│   │   │ ● │ ● │
+└───┴───┴───┴───┘
+</pre>
+            <div class="info">
+                <span class="char">l</span>
+                <span class="pos">R + P bottom</span>
+            </div>
+        </div>
+
+        <!-- o -->
+        <div class="chord left-hand">
+            <div class="info">
+                <span class="char">o</span>
+                <span class="pos">R bottom</span>
+            </div>
+<pre>
+┌───┬───┬───┬───┐
+│   │   │   │   │
+├───┼───┼───┼───┤
+│   │ ● │   │   │
+└───┴───┴───┴───┘
+</pre>
+        </div>
+
+        <!-- SPACE -->
+        <div class="chord right-hand">
+<pre>
+┌───┬───┐
+│ ● │   │
+└───┴───┘
+</pre>
+            <div class="info">
+                <span class="char">_</span>
+                <span class="pos">Center Thumb (Space)</span>
+            </div>
+        </div>
+
+        <!-- w -->
+        <div class="chord left-hand">
+            <div class="info">
+                <span class="char">w</span>
+                <span class="pos">I top + P bot</span>
+            </div>
+<pre>
+┌───┬───┬───┬───┐
+│   │   │   │ ● │
+├───┼───┼───┼───┤
+│ ● │   │   │   │
+└───┴───┴───┴───┘
+</pre>
+        </div>
+
+        <!-- o -->
+        <div class="chord right-hand">
+<pre>
+┌───┬───┬───┬───┐
+│   │   │   │   │
+├───┼───┼───┼───┤
+│   │   │ ● │   │
+└───┴───┴───┴───┘
+</pre>
+            <div class="info">
+                <span class="char">o</span>
+                <span class="pos">R bottom</span>
+            </div>
+        </div>
+
+        <!-- r -->
+        <div class="chord left-hand">
+            <div class="info">
+                <span class="char">r</span>
+                <span class="pos">P top</span>
+            </div>
+<pre>
+┌───┬───┬───┬───┐
+│ ● │   │   │   │
+├───┼───┼───┼───┤
+│   │   │   │   │
+└───┴───┴───┴───┘
+</pre>
+        </div>
+
+        <!-- l -->
+        <div class="chord right-hand">
+<pre>
+┌───┬───┬───┬───┐
+│   │   │   │   │
+├───┼───┼───┼───┤
+│   │   │ ● │ ● │
+└───┴───┴───┴───┘
+</pre>
+            <div class="info">
+                <span class="char">l</span>
+                <span class="pos">R + P bottom</span>
+            </div>
+        </div>
+
+        <!-- d -->
+        <div class="chord left-hand">
+            <div class="info">
+                <span class="char">d</span>
+                <span class="pos">P bot + I bot</span>
+            </div>
+<pre>
+┌───┬───┬───┬───┐
+│   │   │   │   │
+├───┼───┼───┼───┤
+│ ● │   │   │ ● │
+└───┴───┴───┴───┘
+</pre>
+        </div>
+
+        <!-- ! -->
+        <div class="chord right-hand">
+<pre>
+┌───┬───┬───┬───┐
+│ ● │   │   │   │
+├───┼───┼───┼───┤
+│   │ ● │   │   │
+└───┴───┴───┴───┘
+</pre>
+            <div class="info">
+                <span class="char">!</span>
+                <span class="pos">I top + M bot + Space</span>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

@@ -41,8 +41,8 @@
 #define BRR 18  // Bottom Right Ring
 #define BRM 17  // Bottom Right Middle
 #define BRI 16  // Bottom Right Index
-#define ROT 28  // Right Outer Thumb (space)
-#define RIT 29  // Right Inner Thumb (backspace)
+#define ROT 28  // Right Inner Thumb (space)
+#define RIT 29  // Right Outer Thumb (backspace)
 
 &sk {
     release-after-ms = <STICKY_TIMEOUT>;
